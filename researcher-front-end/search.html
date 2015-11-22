@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>DigiDig: Research</title>
+  <meta name="description" content="My Parse App">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>DigiDig: Research</h1>
+    <div class="input-group">
+      <input id="search_bar" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button id="search_button" class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+    <br>
+    <h1 id="result">Searching...</h1>
+  </div>
+
+  <script type="text/javascript">
+    Parse.initialize("EfLjLMR7WNu4EXtszi483xKZDrsK0n3OB7D5Bdea", "bZ6wJgfR9sulzlnrnN3sRawM5pFIzkgStHC76KDc");
+    
+    var DigDig = Parse.Object.extend("DigDig");
+    var query = new Parse.Query(DigDig);
+    var param = getParameterByName("q");
+    query.contains("Title", param);
+
+    query.find({
+      success: function(results) {
+        var list = document.createElement('ul');
+        if (results.length == 0) {
+          document.getElementById('result').innerText = "No results found for " + param + ".";
+        }
+        else {
+          document.getElementById('result').innerText = "Search results for " + param + ":";
+          for (var i = 0; i < results.length; i++) {
+            var object = results[i];
+
+            var a = document.createElement('a');
+            a.title = object.get('Title');
+            a.appendChild(document.createTextNode(object.get('Title')))
+            a.href = "item.html?id=" + object.get('PaleoID');
+
+            var item = document.createElement('li');
+            item.appendChild(a);
+            list.appendChild(item);
+          }
+        }
+        
+        document.getElementById('container').appendChild(list);
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    document.getElementById('search_button').onclick = function() {
+      var href = document.getElementById('search_bar').value;
+      window.open("search.html?q=" + href,"_self")
+    };
+  </script>
+</body>
+
+</html>
