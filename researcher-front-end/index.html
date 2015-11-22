@@ -1,37 +1,37 @@
 <!doctype html>
-<head>
-  <meta charset="utf-8">
+<html>
+  <head>
+    <meta charset="utf-8">
 
-  <title>DigiDig: Research</title>
-  <meta name="description" content="My Parse App">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
+    <title>DigiDig: Research</title>
+    <meta name="description" content="My Parse App">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
 
-<body>
-  <div id="container">
-    <h1>DigiDig: Research</h1>
-    <div class="input-group">
-      <input id="search_bar" type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button id="search_button" class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-    <br>
-    <p>Welcome to DigiDig: Research. Here you can browse through all crowdsourced fossil, tree, and transcription data from DigiDig's mobile game.</p>
-  </div>
+  <body>
+    <div id="container">
+      <h1>DigiDig: Research</h1>
+      <div class="input-group">
+        <input id="search_bar" type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button id="search_button" class="btn btn-default" type="button">Go!</button>
+        </span>
+      </div><!-- /input-group -->
+      <br>
+      <p>Welcome to DigiDig: Research. Here you can browse through all crowdsourced fossil, tree, and transcription data from DigiDig's mobile game.</p>
+    </div>
 
-  <script type="text/javascript">
-    document.getElementById('search_button').onclick = function()
-    {
-      var href = document.getElementById('search_bar').value;
-      window.open("search.html?q=" + href,"_self")
-    };
-  </script>
-</body>
-
+    <script type="text/javascript">
+      document.getElementById('search_button').onclick = function()
+      {
+        var href = document.getElementById('search_bar').value;
+        window.open("search.html?q=" + href,"_self")
+      };
+    </script>
+  </body>
 </html>
