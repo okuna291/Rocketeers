@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+#container {margin: 0 auto;width: 100%; height: 400px; background-color: gray;}
+#input {position: relative;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	text-align: center; 
+}
+#output {position: relative;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	text-align: center; 
+}
+#boxes {position: absolute;
+	width: 200px; 
+	border:10px;
+	text-align: center; 
+
+}
+#head {position: relative;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	text-align: center; 
+	background-color: red;
+}
+#toParse {position: relative;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	width: 100px; 
+	height: 100px; 
+	background-color: red;
+	text-align: center; 
+	color: white;
+}
+
+#GetID {position: relative;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	width: 100px; 
+	height: 100px; 
+	background-color: red;
+	text-align: center; 
+	color: white;
+}
+#fromParse {position: absolute;
+	width: 400px; 
+	margin: 0 auto;
+	border:10px;
+	width: 100px; 
+	height: 100px; 
+	background-color: green;
+	text-align: center; 
+	color: white;
+}
+h1   {color:white}
+p    {color:green}
+</style>
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<title>DIG-DIG</title>
+</head>
+
+<body style="margin: 0;border:0">
+
+	<div id="container" >
+		<div id="head"><h1>DIG DIG - to / from Parse</h1></div>
+		<div id="input">
+			<div id="boxes">
+				<form>
+					<input id="UserEmail" type="text" name="rval" placeholder="UserEmail">
+					<input id="PaleoID" type="text" name="gval" placeholder="PaleoID">
+					<input id="Title" type="text" name="bval" placeholder="Title">
+					<input id="SRC" type="text" name="bval" placeholder="SRC">
+					<input id="PaleoCount" type="text" name="bval" placeholder="PaleoCount">
+					<input id="LineArray" type="text" name="bval" placeholder="LineArray">
+					<input id="ImgArray" type="text" name="bval" placeholder="ImgArray">
+				</form>
+			</div>
+			<div id="toParse" onclick="toParse()">PUT DATA</div>
+		</div><br>
+		<div id="output">
+			<div id="fromParse" onclick="fromParse()">GET DATA</div>
+
+			<div id="FUserEmail"><p>UserEmail</p></div>
+			<div id="FPaleoID"><p>PaleoID</p></div>
+			<div id="FTitle"><p>Title</p></div>
+			<div id="FSRC"><p>SRC</p></div>
+			<div id="FPaleoCount"><p>PaleoCount</p></div>
+			<div id="FLineArray"><p>LineArray</p></div>
+			<div id="FImgArray"><p>ImgArray</p></div>
+					<div id="FID"><p>ID</p></div>
+		<div id="DID"><p>Distance</p></div>
+		</div>
+		<form><input id="ID" type="text" name="ID" placeholder="ID"></form>
+		<div id="GetID" onclick="getPaleoID()">GET ID</div>
+
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+		
+		<script>
+		var socket = io.connect('http://10.20.63.112:8000');
+
+		function toParse(){
+			console.log("Send data to Parse");
+			var UserEmail = document.getElementById('UserEmail').value;
+			var PaleoID = document.getElementById('PaleoID').value;
+			var Title = document.getElementById('Title').value;
+			var SRC = document.getElementById('SRC').value;
+			var PaleoCount = document.getElementById('PaleoCount').value;
+			var LineArray = document.getElementById('LineArray').value;
+			var ImgArray = document.getElementById('ImgArray').value;
+				// console.log(UserEmail);
+				socket.emit('sendToParse',{UserEmail:UserEmail,PaleoID:PaleoID,Title:Title,SRC:SRC,PaleoCount:PaleoCount,LineArray:LineArray,ImgArray:ImgArray} );
+				// document.getElementsByName('firstName').placeholder='new text for email';
+				
+			}
+			
+
+			function fromParse(){
+				console.log("Get data from Parse");
+				socket.emit('getFromParse', { });
+			}
+
+			function getPaleoID(){
+				console.log("Get PaleoID");
+				var ID = document.getElementById('ID').value;
+
+				
+				socket.emit('GetPaleoID', {getID:ID });
+			}
+
+			socket.on('toScreen', function (data) {
+				var num=Object.keys(data.ParseData.results).length;
+				if (num==1){num=0;}
+				var UserEmail = data.ParseData.results[parseInt(num)-1].UserEmail;
+				var PaleoID = data.ParseData.results[parseInt(num)-1].PaleoID;
+				var Title = data.ParseData.results[parseInt(num)-1].Title;
+				var SRC= data.ParseData.results[parseInt(num)-1].SRC;
+				var PaleoCount= data.ParseData.results[parseInt(num)-1].PaleoCount;
+				var LineArray= data.ParseData.results[parseInt(num)-1].LineArray;
+				var ImgArray= data.ParseData.results[parseInt(num)-1].ImgArray;
+				console.log(num);
+				document.getElementById("FUserEmail").innerHTML = UserEmail;
+				document.getElementById("FPaleoID").innerHTML = PaleoID;
+				document.getElementById("FTitle").innerHTML = Title;
+				document.getElementById("FSRC").innerHTML = SRC;
+				document.getElementById("FPaleoCount").innerHTML = PaleoCount;
+				document.getElementById("FLineArray").innerHTML = LineArray;
+				document.getElementById("FImgArray").innerHTML = ImgArray;
+			});
+
+socket.on('FID', function (data) {
+	// console.log("check");
+
+	document.getElementById("FID").innerHTML = data.finalcount + data.PaleoID;
+	document.getElementById("DID").innerHTML = data.LineArrayDistance;
+	console.log(data.finalcount + data.PaleoID);
+	console.log(data.LineArrayDistance);
+	socket.emit('Prince', data);
+});
+
+
+
+</script>
+</body>
+</html>

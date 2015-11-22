@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{F3549B51-B5F8-AF96-2137-40D7E366367D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_3;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Campfire Pack\Script\SwitchView.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasicCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2dCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListenersCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUiCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpaceCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\OldGUIExamplesCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinesBezier.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingAllCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingEverything.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingPunch.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingRigidbodyCS.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\AerodynamicLeaf.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\ChangeMaterialOnGrab.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\CubeWave.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\FloatingStem.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\FlowerBloom.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\FlowerGrower.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\HandCycler.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\HandDetector.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\IgnoreInternalCollisions.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\ParticlesOnCollision.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\PetalMesh.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\PressAnyKeyToReset.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\RecordingControls.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\ResetCollisionsOnBreak.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\StemMesh.cs" />
+     <Compile Include="Assets\LeapMotion Orig\DemoResources\Scripts\VoxelSheet.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\HandController.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\DebugFinger.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\DebugHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\FingerModel.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\HandFader.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\HandModel.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\PolyFinger.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\PolyHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\RiggedFinger.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\RiggedHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\RigidFinger.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\RigidHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\SkeletalFinger.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Hands\SkeletalHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\LeapDeviceInfo.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\LeapImageBasedMaterial.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\LeapImageRetriever.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Tools\ToolModel.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\ConfidenceTransparency.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\DisconnectionNotice.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\EnableDepthBuffer.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\EnableUpdateOrdering.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\FitHeightToScreen.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\GrabbableObject.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\GrabbingHand.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\LeapRecorder.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\MagneticPinch.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\StretchToScreen.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\TriggerDrawing.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Button\ButtonBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Button\ButtonToggleBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\DemoScripts\ButtonDemoGraphics.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\DemoScripts\ButtonDemoToggle.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\DemoScripts\SliderDemo.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\DemoScripts\SliderDemoGraphics.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Dial\DatePickerHideVolume.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Dial\DialGraphics.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Dial\DialModeBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Dial\FadeTextByRotation.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Dial\HilightTextVolume.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Events\EventArg.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Interfaces\AnalogInteractionHandler.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Interfaces\BinaryInteractionHandler.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Interfaces\DataBinder.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Interfaces\IDataBoundWidget.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Physics\LeapPhysicsBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Physics\LeapPhysicsSpring.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Scroll\ScrollBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Slider\SliderBase.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\SliderActivationManager.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Utils\ExponentialSmoothing.cs" />
+     <Compile Include="Assets\LeapMotion Orig\Widgets\Scripts\Utils\FrameRateControls.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\DemoResources\Scripts\BlocksPlaneGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\DemoResources\Scripts\MovementManager.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\DemoResources\Scripts\RandomBlocksGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Scripts\LeapCameraAlignment.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Scripts\OVRReset.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\SystemWipe\QuickSwitcher.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\SystemWipe\SystemWipeRecognizerListener.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\SystemWipe\SystemWipeRecognizerNative.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Widgets\Scripts\DataBinderExamples\DialToTextBinder.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Widgets\Scripts\DataBinderExamples\SliderToTextDataBinder.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Widgets\Scripts\DataBinderExamples\ToggleToTextDataBinder.cs" />
+     <Compile Include="Assets\LeapMotion+OVR Orig\Widgets\Scripts\WidgetsEnabler.cs" />
+     <Compile Include="Assets\LockLocalY.cs" />
+     <Compile Include="Assets\MoveSifter.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRMainMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\Scripts\PageButton.cs" />
+     <Compile Include="Assets\Scripts\UserManager.cs" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\LeapMotion Orig\Materials\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Parse\README.txt" />
+     <None Include="Assets\LeapMotion Orig\Resources\LeapCG.cginc" />
+     <None Include="Assets\AssetStoreFiles\README.txt" />
+     <None Include="Assets\LeapMotion Orig\README_BEFORE_UPDATING.txt" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\LeanTween\Examples\Shader\2dUnlitWithFade.shader" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\UI - BUILDER\Source Files\Fonts\OpenSans-Familiy\OpenSansLic.txt" />
+     <None Include="Assets\Parse\Parse.Unity.xml" />
+     <None Include="Assets\LeapMotion Orig\DemoResources\ScrollerText.txt" />
+     <None Include="Assets\LeapMotion Orig\readme.txt" />
+     <None Include="Assets\LeanTween\ReadMe.txt" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+     <None Include="Assets\LeapMotion Orig\Shaders\RimShading.shader" />
+     <None Include="Assets\LeapMotion Orig\Dependencies.txt" />
+     <None Include="Assets\LeapMotion Orig\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\LeapMotion Orig\Resources\ThresholdOverlay.shader" />
+     <None Include="Assets\LeapMotion Orig\Resources\PassthroughForeground.shader" />
+     <None Include="Assets\LeapMotion Orig\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\LeapMotion Orig\Materials\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\LeapMotion Orig\Resources\PassthroughBackground.shader" />
+     <None Include="Assets\LeapMotion Orig\Widgets\Shaders\SelfIllumAlpha.shader" />
+     <None Include="Assets\LeapMotion Orig\Version.txt" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\LeapMotion Orig\Resources\ImageHandHighlight.shader" />
+     <None Include="Assets\Plugins\SystemWipeRecognizerDll.bundle\Contents\MacOS\version.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Parse.Unity">
+ <HintPath>/Users/piercewolcott/Desktop/HackTheDinos/Assets/Parse/Parse.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>/Users/piercewolcott/Desktop/HackTheDinos/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BA75FFAF-463A-59C3-1A86-E55214960D9F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

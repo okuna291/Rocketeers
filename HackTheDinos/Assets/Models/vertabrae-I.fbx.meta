@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: cf10fd9f951de4d3895135f829969ab1
+timeCreated: 1448176112
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Cube
+    100004: Iguanodon_vert_BMB_004229
+    100006: Iguanodon_vert_BMB_004229_MeshPart0
+    100008: Iguanodon_vert_BMB_004229_MeshPart1
+    100010: Iguanodon_vert_BMB_004229_MeshPart10
+    100012: Iguanodon_vert_BMB_004229_MeshPart11
+    100014: Iguanodon_vert_BMB_004229_MeshPart12
+    100016: Iguanodon_vert_BMB_004229_MeshPart13
+    100018: Iguanodon_vert_BMB_004229_MeshPart14
+    100020: Iguanodon_vert_BMB_004229_MeshPart15
+    100022: Iguanodon_vert_BMB_004229_MeshPart16
+    100024: Iguanodon_vert_BMB_004229_MeshPart2
+    100026: Iguanodon_vert_BMB_004229_MeshPart3
+    100028: Iguanodon_vert_BMB_004229_MeshPart4
+    100030: Iguanodon_vert_BMB_004229_MeshPart5
+    100032: Iguanodon_vert_BMB_004229_MeshPart6
+    100034: Iguanodon_vert_BMB_004229_MeshPart7
+    100036: Iguanodon_vert_BMB_004229_MeshPart8
+    100038: Iguanodon_vert_BMB_004229_MeshPart9
+    100040: Lamp
+    100042: //RootNode
+    400000: Camera
+    400002: Cube
+    400004: Iguanodon_vert_BMB_004229
+    400006: Iguanodon_vert_BMB_004229_MeshPart0
+    400008: Iguanodon_vert_BMB_004229_MeshPart1
+    400010: Iguanodon_vert_BMB_004229_MeshPart10
+    400012: Iguanodon_vert_BMB_004229_MeshPart11
+    400014: Iguanodon_vert_BMB_004229_MeshPart12
+    400016: Iguanodon_vert_BMB_004229_MeshPart13
+    400018: Iguanodon_vert_BMB_004229_MeshPart14
+    400020: Iguanodon_vert_BMB_004229_MeshPart15
+    400022: Iguanodon_vert_BMB_004229_MeshPart16
+    400024: Iguanodon_vert_BMB_004229_MeshPart2
+    400026: Iguanodon_vert_BMB_004229_MeshPart3
+    400028: Iguanodon_vert_BMB_004229_MeshPart4
+    400030: Iguanodon_vert_BMB_004229_MeshPart5
+    400032: Iguanodon_vert_BMB_004229_MeshPart6
+    400034: Iguanodon_vert_BMB_004229_MeshPart7
+    400036: Iguanodon_vert_BMB_004229_MeshPart8
+    400038: Iguanodon_vert_BMB_004229_MeshPart9
+    400040: Lamp
+    400042: //RootNode
+    2300000: Cube
+    2300002: Iguanodon_vert_BMB_004229_MeshPart0
+    2300004: Iguanodon_vert_BMB_004229_MeshPart1
+    2300006: Iguanodon_vert_BMB_004229_MeshPart10
+    2300008: Iguanodon_vert_BMB_004229_MeshPart11
+    2300010: Iguanodon_vert_BMB_004229_MeshPart12
+    2300012: Iguanodon_vert_BMB_004229_MeshPart13
+    2300014: Iguanodon_vert_BMB_004229_MeshPart14
+    2300016: Iguanodon_vert_BMB_004229_MeshPart15
+    2300018: Iguanodon_vert_BMB_004229_MeshPart16
+    2300020: Iguanodon_vert_BMB_004229_MeshPart2
+    2300022: Iguanodon_vert_BMB_004229_MeshPart3
+    2300024: Iguanodon_vert_BMB_004229_MeshPart4
+    2300026: Iguanodon_vert_BMB_004229_MeshPart5
+    2300028: Iguanodon_vert_BMB_004229_MeshPart6
+    2300030: Iguanodon_vert_BMB_004229_MeshPart7
+    2300032: Iguanodon_vert_BMB_004229_MeshPart8
+    2300034: Iguanodon_vert_BMB_004229_MeshPart9
+    3300000: Cube
+    3300002: Iguanodon_vert_BMB_004229_MeshPart0
+    3300004: Iguanodon_vert_BMB_004229_MeshPart1
+    3300006: Iguanodon_vert_BMB_004229_MeshPart10
+    3300008: Iguanodon_vert_BMB_004229_MeshPart11
+    3300010: Iguanodon_vert_BMB_004229_MeshPart12
+    3300012: Iguanodon_vert_BMB_004229_MeshPart13
+    3300014: Iguanodon_vert_BMB_004229_MeshPart14
+    3300016: Iguanodon_vert_BMB_004229_MeshPart15
+    3300018: Iguanodon_vert_BMB_004229_MeshPart16
+    3300020: Iguanodon_vert_BMB_004229_MeshPart2
+    3300022: Iguanodon_vert_BMB_004229_MeshPart3
+    3300024: Iguanodon_vert_BMB_004229_MeshPart4
+    3300026: Iguanodon_vert_BMB_004229_MeshPart5
+    3300028: Iguanodon_vert_BMB_004229_MeshPart6
+    3300030: Iguanodon_vert_BMB_004229_MeshPart7
+    3300032: Iguanodon_vert_BMB_004229_MeshPart8
+    3300034: Iguanodon_vert_BMB_004229_MeshPart9
+    4300000: Iguanodon_vert_BMB_004229_MeshPart0
+    4300002: Iguanodon_vert_BMB_004229_MeshPart1
+    4300004: Iguanodon_vert_BMB_004229_MeshPart2
+    4300006: Iguanodon_vert_BMB_004229_MeshPart3
+    4300008: Iguanodon_vert_BMB_004229_MeshPart4
+    4300010: Iguanodon_vert_BMB_004229_MeshPart5
+    4300012: Iguanodon_vert_BMB_004229_MeshPart6
+    4300014: Iguanodon_vert_BMB_004229_MeshPart7
+    4300016: Iguanodon_vert_BMB_004229_MeshPart8
+    4300018: Iguanodon_vert_BMB_004229_MeshPart9
+    4300020: Iguanodon_vert_BMB_004229_MeshPart10
+    4300022: Iguanodon_vert_BMB_004229_MeshPart11
+    4300024: Iguanodon_vert_BMB_004229_MeshPart12
+    4300026: Iguanodon_vert_BMB_004229_MeshPart13
+    4300028: Iguanodon_vert_BMB_004229_MeshPart14
+    4300030: Iguanodon_vert_BMB_004229_MeshPart15
+    4300032: Iguanodon_vert_BMB_004229_MeshPart16
+    4300034: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
