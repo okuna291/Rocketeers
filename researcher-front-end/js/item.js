@@ -1,6 +1,8 @@
 Parse.initialize("EfLjLMR7WNu4EXtszi483xKZDrsK0n3OB7D5Bdea", "bZ6wJgfR9sulzlnrnN3sRawM5pFIzkgStHC76KDc");
 
 var DigDig = Parse.Object.extend("DigDig");
+var SweetPrince = Parse.Object.extend("SweetPrince")
+var querySP = new Parse.Query(SweetPrince);
 var query = new Parse.Query(DigDig);
 var id = getParameterByName("id");
 query.equalTo("PaleoID", id).descending("PaleoCount");
@@ -30,7 +32,7 @@ query.find({
       for (var i = 0; i < results.length; i++) {
         var object = results[i];
         var item = document.createElement('li');
-        item.appendChild(document.createTextNode(object.get('LineArray') + " (reported by " + object.get('UserEmail') + ". Confidence: " + object.get('PaleoCount') / results.length * 100 + "%)."))
+        item.appendChild(document.createTextNode(object.get('LineArray') + " (reported by " + object.get('UserEmail') + ". Confidence: " + (parseInt(object.get('PaleoCount')) / (results.length - 1 + parseInt(object.get('PaleoCount'))) * 100) + "%)."))
         list.appendChild(item);
       }
       document.getElementById('container-item').appendChild(list);
